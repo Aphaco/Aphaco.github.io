@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    /* box-sizing: border-box; */
+    background-color: #1b191b;
+    overflow-x:hidden ;
+    --pers-bg:#232b3e;
+    --txt-col:aqua;
+}
+#hd{
+   padding-left: 22px;
+}
+#hdd{
+    font-weight: 330px;
+    font-size: 30px;
+    text-align: left;
+    top: 3px;
+}
+h3{
+    color: white;
+}
+.intro{
+    position: relative;
+    left: 300px;
+    top: 45px;
+    font-size: 33px;
+    font-weight: 90px;
+}
+.greet{
+    position: absolute;
+    left: 288px;
+    top:172px;
+    font-size:20px;
+    color: #04eeff;
+    letter-spacing: 2px;
+}
+#info{
+    color: #04eeff;
+}
+.name{
+    position: relative;
+    left: 300px;
+    letter-spacing: 3px;
+    top: 140px;
+    font-size: 100px;
+    color: #04eeff;
+}
+h1{
+    color: white;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    font-style: inherit;
+}
+@keyframes mov{
+    0%{transform: translateY(-30px);}
+    50%{transform: translateY(30px);}
+    100%{transform: translateY(-30px);}
+}
+.image-div{
+    box-shadow:0 0 1rem aqua;
+    border: 9px solid aqua ;
+    border-radius: 23px;
+    width: 433px;
+    height: 453px;
+    overflow: hidden;
+    position: relative;
+    left: 810px;
+    bottom: 359px;
+    animation-name: mov;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+.image-div img{
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+}
+.f1 h1:first-child:after {
+    content: "PORTFOLIO";
+    font-size: small;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: rgb(233, 70, 70);
+    letter-spacing: 2px;
+    background: linear-gradient(to right, rgb(247, 246, 246) 50%, red 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+}
+a{
+    padding-left: 28px;
+    color: white;
+    position: relative;
+    bottom: 30px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+
+}
+a:hover{
+    cursor: pointer;
+    color:aqua;
+    font-weight: bolder;
+}
+nav{
+    text-align: right;
+    padding: 10px 1px 1px;
+    margin-right: 90px;
+   
+}
+.f1{
+    background-color:#232b3e;
+    padding-top: -2px;
+    width: 100%;
+    position: relative;
+    bottom: 540px;
+    position: fixed;
+    z-index: 1;
+    
+    
+}
+
+.second-intro{
+line-height: 2.2rem;
+display: block;
+justify-content: center;
+word-spacing: 3px;
+text-transform: capitalize;
+}
+.second-intro p{
+    font-size: 1.7rem;
+    margin: 2rem 0 4rem;
+    position: relative;
+    top: 23px;
+    left: 300px;
+}
+.but1{
+    position: relative;
+    top: 2px;
+    left: 270px;
+    border: 2px solid transparent;
+    box-shadow:0 0 0.5rem aqua;
+    border-radius: 45px;
+    padding: 9px 21px 9px;
+    font-weight: bold;
+    scale: 1.2;
+    background-color: #04eeff;
+    transition: 0.9;
+}
+.but1:hover{
+    background-color: aqua;
+    box-shadow: none;
+    cursor: pointer;
+}
+.me{
+    color: #04eeff;
+}
+#about-head{
+    position: relative;
+    left: 107px;
+    top: 120px;
+    font-size: 80px;
+}
+.pp{
+    color: white;
+    text-align: left;
+    line-height: 2.1rem;
+    position: relative;
+    left: 108px;
+    top: 98px;
+    text-transform: capitalize;
+
+}
+.about{
+    background-color: #111620;
+    position: relative;
+    bottom: 250px;
+    width: 199%;
+    height: 132vh;
+
+}
+.about-image{
+    border: solid aqua;
+    border-bottom-left-radius: 93px;
+    border-top-right-radius: 53px;
+    border-end-start-radius: 193px;
+    border-end-end-radius: 190px;
+    border-top-left-radius: 53px;
+    border-width: 12px;
+    height: 499px;
+    width: 420px;
+    position: relative;
+    left: 840px;
+    bottom: 490px;
+    overflow: hidden;
+    box-shadow:0 0 1rem aqua;
+    cursor: pointer;
+}
+.about-image #mg{
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    transition: 0.9s;
+}
+ #mg:hover{
+    filter: brightness(0.2);
+}
+.skills{
+background-color: var(--pers-bg);
+width: 190%;
+height: 234vh;
+min-height: auto;
+padding-bottom: 7rem;
+
+}
+.skills-columns{
+    position: relative;
+    left: 223px;
+}
+.sk{
+color: var(--txt-col);
+padding-left: 10px;
+}
+.skills-head{
+justify-content: center;
+position: relative;
+left: 532px;
+font-size: 50px;
+color: white;
+}
+span{
+    color: var(--txt-col);
+}
+.skills .skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.skills-row .skills-columns{
+    flex:  1 1 30rem;
+}
+.skills-columns{
+    position: relative;
+    left: 320px;
+}
+.skills-columns .title{
+    font-size: 2.5rem;
+}
+
+.skills-column{
+    position: relative;
+    left: 60px;
+}
+.skills-column  .title{
+    font-size: 2.5rem;
+}
+.skills-box .skills-content{
+    position: relative;
+    border: 2px solid var(--txt-col);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    width: 420px;
+    z-index: 1;
+    overflow: hidden;
+}
+.skills-box .skills-content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #081B29;
+    z-index: -1;
+    transition: .5s;
+}
+.skills-box .skills-content:hover::before{
+width: 100%;
+}
+.skills-content .progress{
+    padding: 1rem 0;
+}
+.skills-content .progress #ps{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content:space-between;
+}
+.skills-content .progress #ps span{
+color: white;
+}
+.skills-content .progress .bar{
+    height: 4px;
+    border-radius: .6rem;
+    border: .2rem solid var(--txt-col);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.skills-content .progress .bar span{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: .3rem;
+    background-color: var(--txt-col);
+   
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 78%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 89%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 75%;
+}
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width: 63%;
+}
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width: 88%;
+}
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+    width: 100%;
+}
+

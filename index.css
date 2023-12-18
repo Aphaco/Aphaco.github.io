@@ -15,7 +15,7 @@ body{
     font-weight: 330px;
     font-size: 30px;
     text-align: left;
-    top: 3px;
+    top: 23px;
 }
 h3{
     color: white;
@@ -112,8 +112,7 @@ a:hover{
 nav{
     text-align: right;
     padding: 10px 1px 1px;
-    margin-right: 90px;
-   
+    margin-right: 90px;   
 }
 .f1{
     background-color:#232b3e;
@@ -184,7 +183,9 @@ text-transform: capitalize;
     bottom: 250px;
     width: 199%;
     height: 132vh;
-
+    left: 213px;
+    margin-left: -219px;
+    padding-bottom: 123px;
 }
 .about-image{
     border: solid aqua;
@@ -214,11 +215,14 @@ text-transform: capitalize;
 }
 .skills{
 background-color: var(--pers-bg);
-width: 190%;
-height: 234vh;
+width: 500vh;
+height: 134vh;
 min-height: auto;
 padding-bottom: 7rem;
-
+position: relative;
+left: 83px;
+padding-left: 50px;
+margin-left: -162px;
 }
 .skills-columns{
     position: relative;
@@ -334,4 +338,115 @@ color: white;
 .skills-columns:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
     width: 100%;
 }
+.heading{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+#mee{
+    color: white;
+}
 
+.contact{
+    position: relative;
+    background-color: var(--pers-bg);
+    width: 123vw;
+    right: 120px;
+    padding-right: 110px;
+    min-height: auto;
+    padding-bottom: 7rem;
+    padding-top: 39px;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .input-box{
+position: relative;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: 0.8rem 0;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border-radius: .6rem;
+    color: white;
+    border-color: #04eeff;
+}
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+    color: white;
+
+}
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textarea-field textarea{
+    resize: none;
+}
+/* .contact form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+    background-color: rgb(252, 10, 10);
+    z-index: -1;
+    transition: .5s;
+}
+.contact form .input-box .input-field input:focus:~.focus,
+.contact form .input-box .input-field input:valid:~.focus,
+.contact form .input-box .textarea-field textarea:focus:~.focus,
+.contact form .input-box .textarea-field textarea:valid:~.focus{
+    width: 100%;
+} */
+
+.contact form .input-box .input-field input,
+.contact form .input-box .textarea-field textarea {
+    position: relative;
+    z-index: 1;
+}
+
+.contact form .input-box .input-field input::before,
+.contact form .input-box .textarea-field textarea::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact form .input-box .input-field input:hover::before,
+.contact form .input-box .input-field input:focus::before,
+.contact form .input-box .textarea-field textarea:hover::before,
+.contact form .input-box .textarea-field textarea:focus::before {
+    width: 100%;
+}
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textarea-field textarea{
+    resize: none;
+}

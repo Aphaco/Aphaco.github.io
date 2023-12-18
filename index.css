@@ -4,9 +4,11 @@ body{
     font-family: 'Poppins',sans-serif;
     /* box-sizing: border-box; */
     background-color: #1b191b;
-    overflow-x:hidden ;
+    overflow-x:hidden;
+    direction: ltr;
     --pers-bg:#232b3e;
     --txt-col:aqua;
+
 }
 #hd{
    padding-left: 22px;
@@ -218,11 +220,12 @@ background-color: var(--pers-bg);
 width: 500vh;
 height: 134vh;
 min-height: auto;
-padding-bottom: 7rem;
+padding-bottom: 27rem;
 position: relative;
 left: 83px;
 padding-left: 50px;
 margin-left: -162px;
+margin-top: -310px;
 }
 .skills-columns{
     position: relative;
@@ -238,6 +241,7 @@ position: relative;
 left: 532px;
 font-size: 50px;
 color: white;
+padding-top: 132px;
 }
 span{
     color: var(--txt-col);
@@ -350,13 +354,14 @@ color: white;
 
 .contact{
     position: relative;
+    bottom: -1px;
     background-color: var(--pers-bg);
     width: 123vw;
-    right: 120px;
+    right: 150px;
     padding-right: 110px;
     min-height: auto;
     padding-bottom: 7rem;
-    padding-top: 39px;
+    padding-top: 45px;
 }
 .contact form{
     max-width: 70rem;
@@ -398,49 +403,23 @@ flex-wrap: wrap;
 .contact form .textarea-field textarea{
     resize: none;
 }
-/* .contact form .focus{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: .6rem;
-    background-color: rgb(252, 10, 10);
-    z-index: -1;
-    transition: .5s;
-}
-.contact form .input-box .input-field input:focus:~.focus,
-.contact form .input-box .input-field input:valid:~.focus,
-.contact form .input-box .textarea-field textarea:focus:~.focus,
-.contact form .input-box .textarea-field textarea:valid:~.focus{
-    width: 100%;
-} */
-
-.contact form .input-box .input-field input,
-.contact form .input-box .textarea-field textarea {
+.but2{
     position: relative;
-    z-index: 1;
+    top: 2px;
+    left: 7%;
+    border: 2px solid transparent;
+    box-shadow:0 0 0.5rem aqua;
+    border-radius: 45px;
+    padding: 9px 21px 9px;
+    font-weight: bold;
+    scale: 1.2;
+    background-color: #04eeff;
+    transition: 0.9;
 }
-
-.contact form .input-box .input-field input::before,
-.contact form .input-box .textarea-field textarea::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: blue;
-    transition: width 0.3s ease-in-out;
-    z-index: -1;
-    transition: .5s;
-}
-
-.contact form .input-box .input-field input:hover::before,
-.contact form .input-box .input-field input:focus::before,
-.contact form .input-box .textarea-field textarea:hover::before,
-.contact form .input-box .textarea-field textarea:focus::before {
-    width: 100%;
+.but2:hover{
+    background-color: aqua;
+    box-shadow: none;
+    cursor: pointer;
 }
 .contact form .textarea-field{
     position: relative;

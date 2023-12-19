@@ -18,11 +18,11 @@
 <nav>
     <h1 id="hdd">OMEGA<span id="hd">APHACO</span></h1>
 
-    <a href="#home">HOME</a>
-    <a href="#about">ABOUT</a>
-    <a href="#skills">SKILLS</a>
-    <a href="#contact-page">CONTACT</a>
-    <a href="#services">PROJECTS</a>
+    <a href="#home" >HOME</a>
+    <a href="#about" >ABOUT</a>
+    <a href="#skills" >SKILLS</a>
+    <a href="#contact-page" >CONTACT</a>
+    <a href="#portfolio" id="nav-top">PROJECTS</a>
 </nav>
 </div>
 <section id="home">
@@ -116,7 +116,7 @@
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Adress">
+                    <input type="email" placeholder="Email Adress" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                     <span class="focus"></span>
                 </div>
             </div>
@@ -143,15 +143,14 @@
 
 
     <section class="portfolio" id="portfolio">
-
-        <h2 class="heading">Latest <span>Projects</span> </h2>
+        <h2 class="heading">Latest <span id="pro-hd">Projects</span> </h2>
         <div class="portfolio-container">
             <div class="portfolio-box" id="for34">
                 <img src="a.jpg " alt="">
                 <div class="portfolio-layer">
                     <h4>WEB DESIGN</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur doloremque laboriosam, perferendis reiciendis, odit, iste dolore asperiores error sed ullam est! Earum nihil perspiciatis soluta obcaecati necessitatibus molestias, placeat velit.</p>
-                    <a href=""><box-icon name='link'></box-icon></a>
+                    <p>With a keen eye for aesthetics and a strong understanding of user experience, I strive to bring ideas to life and deliver impactful designs. Let's collaborate and make the web a more beautiful place!"</p>
+                    <a href="" id="a-pro"><box-icon name='link'></box-icon></a>
                 </div>
             </div>
 
@@ -160,27 +159,43 @@
                 <div class="portfolio-layer">
                     <h4>PYTHON</h4>
                     <p>With Python, I can bring ideas to life, automate tasks, and solve problems. I love exploring the vast possibilities that Python offers and staying up-to-date with the latest libraries and frameworks. Let's create something amazing together!</p>
-                    <a href=""><box-icon name='link-external'></box-icon></a>
+                    <a href="" id="a-pro"><box-icon name='link-external'></box-icon></a>
                 </div>
             </div>
             <div class="portfolio-box" id="for3">
                 <img src="c.jpg " alt="" id="for33">
                 <div class="portfolio-layer">
                     <h4>C. S. S</h4>
-                    <p>I'm Omega, a CSS enthusiast with 2 years of experience in web design. I love creating visually stunning and user-friendly websites. I stay up-to-date with the latest trends and technologies to ensure my designs are always on point. Let's bring your web projects to life!</p>
-                    <a href=""><box-icon name='link-external'></box-icon></a>
+                    <p>I love creating visually stunning and user-friendly websites. I stay up-to-date with the latest trends and technologies to ensure my designs are always on point. Let's bring your web projects to life!</p>
+                    <a href="" id="a-pro"><box-icon name='link-external'></box-icon></a>
                 </div>
             </div>
             <div class="portfolio-box" id="for31">
                 <img src="e.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>JAVA SCRIPT</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur doloremque laboriosam, perferendis reiciendis, odit, iste dolore asperiores error sed ullam est! Earum nihil perspiciatis soluta obcaecati necessitatibus molestias, placeat velit.</p>
-                    <a href=""> <box-icon name='link-external'></box-icon></a>
+                    <p>With JavaScript, I can bring websites to life by adding functionality, creating animations, and handling user interactions. I love exploring new frameworks and libraries to enhance my coding skills. Let's make the web more engaging together!"</p>
+                    <a href="" id="a-pro"> <box-icon name='link-external'></box-icon></a>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-text">
+            <p id="footer-para" class="p">Copyright &copy; 2023 by OMEGA | All Rights Reserved</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#home"><box-icon id="fotico" name='chevrons-up' ></box-icon></a>
+        </div>
+    </footer>
+    <div class="social-ico">
+        <a href="https://t.co/lMpmGXN0nv" id="nav-top"><box-icon type='logo' name='meta' color='#0cd2f3' id="nav-top"></box-icon></a>
+        <a href="instagram.com" id="nav-top"><box-icon name='instagram-alt' type='logo'color='#0cd2f3' id="nav-top" ></box-icon></a>
+        <a href="https://twitter.com" id="nav-top"><box-icon name='twitter' type='logo' color='#0cd2f3' id="nav-top"></box-icon></a>
+        <a  href="gmail.com"id="nav-top"><box-icon name='gmail' type='logo' color='#0cd2f3'id="nav-top" ></box-icon></a>
+    </div>
+    
 <script>
     AOS.init();
   </script>

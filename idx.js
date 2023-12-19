@@ -42,3 +42,13 @@ document.querySelector('a').addEventListener('click', function(e) {
       behavior: 'smooth'
     });
   });
+  document.querySelector('a').addEventListener('click', function(e) {
+   
+    e.preventDefault();
+
+    const target = this.getAttribute('#portfolio');
+   
+    document.querySelector(target).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });

@@ -710,6 +710,31 @@ footer{
         max-width: 20%;
         max-height: 20%;
     }
+    .portfolio{
+        max-width: 20%;
+        max-height: 20%;
+    }
+    .portfolio-box{
+        max-width: 20%;
+        max-height: 20%; 
+    }
+    .skills{
+        max-width: 20%;
+        max-height: 20%;
+    }
+    .skills-box{
+        max-width: 20%;
+        max-height: 20%;
+    }
+    .contact{
+        max-width: 20%;
+        max-height: 20%;
+    }
+    nav{
+        position:fixed;
+        top: 100%;
+    }
+
     .about{
         min-width: 30%;
         min-height: 30%;

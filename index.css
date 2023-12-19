@@ -4,11 +4,11 @@ body{
     font-family: 'Poppins',sans-serif;
     /* box-sizing: border-box; */
     background-color: #1b191b;
-    overflow-x:hidden;
+    overflow-x:hidde;
     direction: ltr;
     --pers-bg:#232b3e;
     --txt-col:aqua;
-
+    scroll-behavior: smooth;
 }
 #hd{
    padding-left: 22px;
@@ -17,7 +17,7 @@ body{
     font-weight: 330px;
     font-size: 30px;
     text-align: left;
-    top: 23px;
+    top: 38px;
 }
 h3{
     color: white;
@@ -32,7 +32,8 @@ h3{
 .greet{
     position: absolute;
     left: 288px;
-    top:172px;
+    /* top:172px; */
+    bottom: 793px;
     font-size:20px;
     color: #04eeff;
     letter-spacing: 2px;
@@ -406,7 +407,7 @@ flex-wrap: wrap;
 .but2{
     position: relative;
     top: 2px;
-    left: 7%;
+    left: 2%;
     border: 2px solid transparent;
     box-shadow:0 0 0.5rem aqua;
     border-radius: 45px;
@@ -428,4 +429,135 @@ flex-wrap: wrap;
 }
 .contact form .textarea-field textarea{
     resize: none;
+}
+.portfolio{
+    background: var(--pers-bg);
+    /* height: -340vh; */
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #1f242d;
+    overflow: hidden;
+    display: flex;
+}
+.portfolio-box img{
+    width: 100%;
+}
+
+h4 {
+    color: white;
+}
+.portfolio-box:hover img{
+    width: 100%;
+    transition: .5s ease;
+}
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1),#0ef);
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+
+}
+
+.portfolio-layer h4{
+    font-size: 3rem;
+}
+.portfolio-layer p{
+    font-size: 1.6rem;
+    margin: 0;   
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 90%;
+}
+a{
+    position: relative;
+    right: 59px;
+    border-radius: 390px;
+
+}
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: #323946;
+}
+#for3{
+    object-fit: cover;
+    position: relative;
+    bottom: -3px;
+    right: 250px;
+    width: 433px;
+    height: 463px;
+}
+#for33 #for3 {
+    object-fit: cover;
+    width: 100%;
+    height: 530px;
+}
+#for34{
+    object-fit: cover;
+    position: relative;
+    bottom: -3px;
+    right: -10px;
+    width: 433px;
+    height: 463px;
+}
+
+#for31{
+    object-fit: cover;
+    position: relative;
+    bottom: -25px;
+    right: -10px;
+    width: 433px;
+    height: 463px;
+}
+#for32{
+    object-fit: cover;
+    position: relative;
+    bottom: -510px;
+    left: 250px;
+    width: 433px;
+    height: 463px;
+}
+h4{
+    position: relative;
+    right: 60px;
+    margin-top: 0;
+}
+p{
+    position: relative;
+    right: 60px;
+    bottom: 45px;
+    color: white;
+}
+box-icon {
+    position: relative;
+    right: 20px;
+   font-weight: 160px;
+   background: transparent;
 }

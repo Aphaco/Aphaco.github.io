@@ -4,7 +4,7 @@ body{
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
     background-color: #1b191b;
-    overflow-x:hidden;
+    overflow-x:hiden;
     direction: ltr;
     --pers-bg:#232b3e;
     --txt-col:aqua;
@@ -34,7 +34,7 @@ h3{
     position: absolute;
     left: 288px;
     /* top:172px; */
-    bottom: 393px;
+    bottom: 440px;
     font-size:20px;
     color: #04eeff;
     letter-spacing: 2px;
@@ -527,7 +527,8 @@ h4 {
 }
 .portfolio-box:hover .portfolio-layer{
     transform: translateY(0);
-
+    backdrop-filter: blur(95px);
+    filter: brightness(0px);
 }
 
 .portfolio-layer h4{

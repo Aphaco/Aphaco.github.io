@@ -34,7 +34,7 @@ h3{
     position: absolute;
     left: 288px;
     /* top:172px; */
-    bottom: 793px;
+    bottom: 393px;
     font-size:20px;
     color: #04eeff;
     letter-spacing: 2px;
@@ -114,7 +114,7 @@ a{
     transition: .5 ease-out;
 }
 #home{
-    margin-top: -131px;
+    margin-top: -31px;
 }
 li{
     list-style: none;
@@ -169,7 +169,6 @@ a:hover{
     color:aqua;
     font-weight: bolder;
     letter-spacing: 1px;
-    border-bottom: 1.4px solid #04eeff ;
 }
 nav{
     text-align: right;
@@ -483,6 +482,7 @@ flex-wrap: wrap;
 .portfolio{
     background: var(--pers-bg);
     /* height: -340vh; */
+
 }
 .portfolio-container{
     display: grid;

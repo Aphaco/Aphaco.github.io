@@ -174,7 +174,7 @@ nav{
     text-align: right;
     padding: 10px 1px 1px;
     margin-right: 90px;
-
+    margin-bottom: 27px;
 }
 
 .second-intro{
@@ -697,8 +697,8 @@ footer{
 
 
 
-
-/* @media (max-width: 767px) {
+/* 
+@media (max-width: 767px) {
     body {
         font-size: 14px;
     }
@@ -725,7 +725,7 @@ footer{
         width: 100%;
         height: auto;
         position: static;
-        margin-top: 20px;
+        margin-top: 0px;
         animation: none;
     }
 }
@@ -735,6 +735,11 @@ footer{
         font-size: 16px;
     }
     .intro {
+        left: 50px;
+        top: 25px;
+        font-size: 25px;
+    }
+    .greet{
         left: 50px;
         top: 25px;
         font-size: 25px;
@@ -758,7 +763,7 @@ footer{
     .intro {
         left: 50px;
         top: 25px;
-        font-size: 25px;
+        font-size: 10px;
     }
     .dropdown_menu {
         display: none;
@@ -779,7 +784,8 @@ footer{
 
 
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) 
+ {
     body {
         font-size: 18px;
     }
@@ -800,7 +806,16 @@ footer{
 
 @media (min-width: 1200px) {
     body {
+       
         font-size: 20px;
+    }
+    .image-div{
+        height: 100px;
+    }
 
+} 
+@media (min-width:527){
+    .image-div{
+        height: 100px;
     }
 } */

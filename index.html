@@ -14,19 +14,20 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body id="home">
-    <header>
+    
 <div class="f1">
     <nav class="links">
         <h1 id="hdd">OMEGA<span id="hd">APHACO</span></h1>
-       <a href="#home" >HOME</a>
+       <a href="#about" ></a>
+       <a href="#Home" >HOME</a>
        <a href="#about" >ABOUT</a>
         <a href="#skills" >SKILLS</a>
       <a href="#contact-page" >CONTACT</a>
       <a href="#portfolio" id="nav-top">PROJECTS</a>
     </nav>
-    <div class="toggle_button">
+    <!-- <div class="toggle_button">
         <i class="fa-solid fa-bars"></i>
-    </div>
+    </div> -->
 </div>
 <!-- <div class="dropdown_menu open">
     <ul>
@@ -37,20 +38,20 @@
         <li><a href="#portfolio" id="nav-top" class="aa">PROJECTS</a></li>
     </ul>
 </div> -->
-</header>
-<section id="home">
-<div class="home">
-<h3 class="greet"data-aos="fade-right" data-aos-delay="700" >Hello, my name is </h3>
-<h1 class="name" data-aos="fade-down" data-aos-delay="1700">APHACO</h1>
-<h3 class="intro">I'm a <span id="info"></span></h3>
-<h3 class="second-intro"><p>and also have expertise in <br> database management <br>and
-      other related areas.</p></h3>
-<a href="#about"><button class="but1">READ MORE</button></a>
-<div class="image-div" data-aos="fade-in" data-aos-delay="1000"> 
-    <img src="fot2.png" data-aos="fade-in" data-aos-delay="1000"  >
-</div>
-</section>
-</div>
+    
+    <section id="Home">
+        <div class="home">
+        <h3 class="greet"data-aos="fade-right" data-aos-delay="700" >Hello, my name is </h3>
+        <h1 class="name" data-aos="fade-down" data-aos-delay="1700">APHACO</h1>
+        <h3 class="intro">I'm a <span id="info"></span></h3>
+        <h3 class="second-intro"><p>and also have expertise in <br> database management <br>and
+            other related areas.</p></h3>
+        <a href="#about"><button class="but1">READ MORE</button></a>
+        <div class="image-div" data-aos="fade-in" data-aos-delay="1000"> 
+            <img src="fot2.png" data-aos="fade-in" data-aos-delay="1000"  >
+        </div>
+        </div>
+    </section>
 
 <section id="about" class="about">
     <h1 id="about-head">About <span class="me" >Me</span></h1>
@@ -220,7 +221,7 @@ const toggle_BtnIcon=document.querySelector(".toggle_button i")
 const dropDownMenu=document.querySelector(".dropdown_menu")
 
 toggle_Btn.addEventListener('click', function() {
-  dropdownMenu.classList.toggle('open');
+dropdownMenu.classList.toggle('open');
 });
 
 

@@ -18,6 +18,7 @@ ScrollReveal().reveal('.skills-row', { delay: 600 , origin:"right"});
 ScrollReveal().reveal('.progress', { delay: 1000 , origin:"bottom"});
 ScrollReveal().reveal('#mee', { delay: 1000 , origin:"bottom"});
 ScrollReveal().reveal('#home', { delay: 1000 , origin:"bottom"});
+ScrollReveal().reveal('#portfolio', { delay: 1000 , origin:"bottom"});
 
 
 document.querySelector('a').addEventListener('click', function(e) {

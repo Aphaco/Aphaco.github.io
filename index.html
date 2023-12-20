@@ -14,17 +14,30 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+    <header>
 <div class="f1">
-<nav>
-    <h1 id="hdd">OMEGA<span id="hd">APHACO</span></h1>
-
-    <a href="#home" >HOME</a>
-    <a href="#about" >ABOUT</a>
-    <a href="#skills" >SKILLS</a>
-    <a href="#contact-page" >CONTACT</a>
-    <a href="#portfolio" id="nav-top">PROJECTS</a>
-</nav>
+    <nav class="links">
+        <h1 id="hdd">OMEGA<span id="hd">APHACO</span></h1>
+       <a href="#home" >HOME</a>
+       <a href="#about" >ABOUT</a>
+        <a href="#skills" >SKILLS</a>
+      <a href="#contact-page" >CONTACT</a>
+      <a href="#portfolio" id="nav-top">PROJECTS</a>
+    </nav>
+    <div class="toggle_button">
+        <i class="fa-solid fa-bars"></i>
+    </div>
 </div>
+<div class="dropdown_menu open">
+    <ul>
+        <li><a href="#home" class="aa">HOME</a></li>
+        <li><a href="#about" class="aa" >ABOUT</a></li>
+        <li><a href="#skills" class="aa" >SKILLS</a></li>
+        <li><a href="#contact-page" class="aa" >CONTACT</a></li>
+        <li><a href="#portfolio" id="nav-top" class="aa">PROJECTS</a></li>
+    </ul>
+</div>
+</header>
 <section id="home">
 <div class="home">
 <h3 class="greet"data-aos="fade-right" data-aos-delay="700" >Hello, my name is </h3>
@@ -54,6 +67,7 @@
             <img src="fotor.jpg" id="mg" loading="lazy" alt="A picture of a programmer">
         </div>
     </section>
+
     <section class="skills" id="skills">
         <h2 class="skills-head">My<span class="sk">Skills</span></h2>
 
@@ -136,15 +150,15 @@
                 <span class="focus"></span>
             </div>
             <div class="btn-box btns">
-                <button type="submit" class="but2">SEND MESSAGE</button>
+                <button type="submit" id="submit-button" class="but2">SEND MESSAGE</button>
             </div>
         </form>
     </section>
 
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span id="pro-hd">Projects</span> </h2>
-        <div class="portfolio-container">
+        <h2 class="heading" data-aos="fade-up" data-aos-delay="1000">Latest <span id="pro-hd">Projects</span> </h2>
+        <div class="portfolio-container"  data-aos="fade-up" data-aos-delay="1000">
             <div class="portfolio-box" id="for34">
                 <img src="a.jpg " alt="">
                 <div class="portfolio-layer">
@@ -154,7 +168,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box" id="for32">
+            <div class="portfolio-box" id="for32"  data-aos="fade-down" data-aos-delay="1000">
                 <img src="d.jpg " alt="">
                 <div class="portfolio-layer">
                     <h4>PYTHON</h4>
@@ -162,7 +176,7 @@
                     <a href="" id="a-pro"><box-icon name='link-external'></box-icon></a>
                 </div>
             </div>
-            <div class="portfolio-box" id="for3">
+            <div class="portfolio-box" id="for3"  data-aos="fade-down" data-aos-delay="1000">
                 <img src="c.jpg " alt="" id="for33">
                 <div class="portfolio-layer">
                     <h4>C. S. S</h4>
@@ -170,7 +184,7 @@
                     <a href="" id="a-pro"><box-icon name='link-external'></box-icon></a>
                 </div>
             </div>
-            <div class="portfolio-box" id="for31">
+            <div class="portfolio-box" id="for31"  data-aos="fade-down" data-aos-delay="1000">
                 <img src="e.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>JAVA SCRIPT</h4>
@@ -182,7 +196,7 @@
     </section>
 
     <footer>
-        <div class="footer-text">
+        <div class="footer-text"  data-aos="fade-down" data-aos-delay="1000">
             <p id="footer-para" class="p">Copyright &copy; 2023 by OMEGA | All Rights Reserved</p>
         </div>
         <div class="footer-icontop">
@@ -200,5 +214,15 @@
     AOS.init();
   </script>
     <script src="idx.js"></script>
+<script>
+const toggle_Btn=document.querySelector(".toggle_button")
+const toggle_BtnIcon=document.querySelector(".toggle_button i")
+const dropDownMenu=document.querySelector(".dropdown_menu")
+
+toggle_Btn.addEventListener('click', function() {
+  dropdownMenu.classList.toggle('open');
+});
+
+
     </script>
 </html>

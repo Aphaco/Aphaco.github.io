@@ -4,7 +4,7 @@ body{
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
     background-color: #1b191b;
-    overflow-x:hiddn;
+    overflow-x:hidden;
     direction: ltr;
     --pers-bg:#232b3e;
     --txt-col:aqua;
